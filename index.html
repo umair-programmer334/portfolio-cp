@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portfolio | Your Name</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="top">
+    <nav class="navbar">
+      <a href="#home" class="brand">My<span>Portfolio</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#practice">Practice</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="small-heading">WELCOME TO MY WEBSITE</p>
+        <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
+        <h2>Computer Science Student</h2>
+        <p class="lead">I am learning web development and building my skills in HTML, CSS, and JavaScript. This website presents my learning journey, skills, and practice projects.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#projects">Explore My Work</a>
+          <a class="button button-outline" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="profile-card">
+        <div class="profile-circle">YN</div>
+        <h3>Student Developer</h3>
+        <p>Learning something new every day</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section" id="about">
+      <p class="small-heading">A LITTLE ABOUT ME</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-box">
+        <p>I am a Computer Science student interested in web design and development. I enjoy learning how websites are structured, styled, and made interactive.</p>
+        <p>This portfolio is part of my Web Development Class Participation (CP). It demonstrates the HTML, CSS, and JavaScript concepts I have practiced.</p>
+      </div>
+    </section>
+
+    <section class="section-wrap section tinted" id="skills">
+      <p class="small-heading">WHAT I AM LEARNING</p>
+      <h2 class="section-title">My Skills</h2>
+      <div class="grid skills-grid">
+        <article class="skill-card"><div class="icon">H</div><h3>HTML</h3><p>Building page structure with headings, paragraphs, links, lists, and forms.</p></article>
+        <article class="skill-card"><div class="icon">C</div><h3>CSS</h3><p>Using colors, fonts, spacing, layouts, hover effects, and responsive design.</p></article>
+        <article class="skill-card"><div class="icon">JS</div><h3>JavaScript</h3><p>Handling button clicks, updating page content, and validating form input.</p></article>
+      </div>
+    </section>
+
+    <section class="section-wrap section" id="projects">
+      <p class="small-heading">MY PRACTICE WORK</p>
+      <h2 class="section-title">My Projects</h2>
+      <div class="grid project-grid">
+        <article class="project-card"><div class="project-visual visual-one">&lt;/&gt;</div><div class="project-info"><span class="badge">HTML + CSS</span><h3>Personal Portfolio</h3><p>A website introducing a student, skills, and learning goals.</p></div></article>
+        <article class="project-card"><div class="project-visual visual-two">✓</div><div class="project-info"><span class="badge">JavaScript</span><h3>Interactive Counter</h3><p>A small feature that increases a number when a button is clicked.</p></div></article>
+        <article class="project-card"><div class="project-visual visual-three">✉</div><div class="project-info"><span class="badge">HTML + CSS + JS</span><h3>Contact Form</h3><p>A form that checks required fields and displays a confirmation message.</p></div></article>
+      </div>
+      <p class="notice">Update these descriptions to match the work you have actually completed for class.</p>
+    </section>
+
+    <section class="section-wrap section tinted" id="practice">
+      <p class="small-heading">TRY THE INTERACTIVE FEATURES</p>
+      <h2 class="section-title">JavaScript Practice</h2>
+      <div class="grid practice-grid">
+        <article class="practice-card">
+          <h3>Click Counter</h3>
+          <p>Click the button and watch the number change.</p>
+          <div class="counter-number" id="counter">0</div>
+          <div class="button-row"><button class="button button-primary" id="increaseBtn">Increase</button><button class="button button-outline" id="resetBtn">Reset</button></div>
+        </article>
+        <article class="practice-card">
+          <h3>Color Changer</h3>
+          <p>Click below to change the color of this box.</p>
+          <div class="color-box" id="colorBox">Change my color!</div>
+          <button class="button button-primary" id="colorBtn">Change Color</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-wrap section" id="contact">
+      <div class="contact-layout">
+        <div>
+          <p class="small-heading">GET IN TOUCH</p>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="muted">Use the form to test HTML inputs and JavaScript form handling.</p>
+          <p class="contact-detail"><strong>Email:</strong> your.email@example.com</p>
+          <p class="contact-detail"><strong>University:</strong> Your University Name</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label for="fullName">Your Name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+          <button type="submit" class="button button-primary">Submit Form</button>
+          <p id="formStatus" class="form-status" role="status"></p>
+          <p class="notice">Demo only: this form displays a message but does not send an email.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Your Name | Web Development CP Portfolio</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
